@@ -18,6 +18,7 @@
 		6F64F43B23095E1600F9B58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F43923095E1600F9B58E /* LaunchScreen.storyboard */; };
 		6F64F44123095E7700F9B58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F41F23095DCB00F9B58E /* Assets.xcassets */; };
 		6F64F44323095F0900F9B58E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F44223095F0900F9B58E /* .gitignore */; };
+		6F64F4452309653400F9B58E /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F4442309653400F9B58E /* LoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		6F64F43A23095E1600F9B58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F64F43C23095E1600F9B58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F64F44223095F0900F9B58E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6F64F4442309653400F9B58E /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				6F64F41823095DC700F9B58E /* AppDelegate.swift */,
 				6F64F41A23095DC700F9B58E /* ViewController.swift */,
+				6F64F4442309653400F9B58E /* LoginStoryboard.storyboard */,
 				6F64F41C23095DC700F9B58E /* Main.storyboard */,
 				6F64F42123095DCB00F9B58E /* LaunchScreen.storyboard */,
 				6F64F42423095DCB00F9B58E /* Info.plist */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F64F44323095F0900F9B58E /* .gitignore in Resources */,
+				6F64F4452309653400F9B58E /* LoginStoryboard.storyboard in Resources */,
 				6F64F42323095DCB00F9B58E /* LaunchScreen.storyboard in Resources */,
 				6F64F42023095DCB00F9B58E /* Assets.xcassets in Resources */,
 				6F64F41E23095DC700F9B58E /* Main.storyboard in Resources */,
