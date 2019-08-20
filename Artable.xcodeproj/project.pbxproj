@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F41A2F6230B235E00B62D2B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2F4230B235E00B62D2B /* ForgotPasswordVC.swift */; };
+		6F41A2F7230B235E00B62D2B /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F41A2F5230B235E00B62D2B /* ForgotPasswordVC.xib */; };
+		6F41A2F9230B6E9C00B62D2B /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */; };
+		6F41A2FA230B6F4300B62D2B /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */; };
+		6F41A2FB230B6F4700B62D2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4562309BCE700F9B58E /* Constants.swift */; };
+		6F41A2FC230B6F4B00B62D2B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4542309ABD100F9B58E /* Extensions.swift */; };
 		6F64F41923095DC700F9B58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F41823095DC700F9B58E /* AppDelegate.swift */; };
-		6F64F41B23095DC700F9B58E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F41A23095DC700F9B58E /* ViewController.swift */; };
+		6F64F41B23095DC700F9B58E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F41A23095DC700F9B58E /* HomeVC.swift */; };
 		6F64F41E23095DC700F9B58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F41C23095DC700F9B58E /* Main.storyboard */; };
 		6F64F42023095DCB00F9B58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F41F23095DCB00F9B58E /* Assets.xcassets */; };
 		6F64F42323095DCB00F9B58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F42123095DCB00F9B58E /* LaunchScreen.storyboard */; };
@@ -32,9 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F41A2F4230B235E00B62D2B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		6F41A2F5230B235E00B62D2B /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
 		6F64F41523095DC700F9B58E /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F64F41823095DC700F9B58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F64F41A23095DC700F9B58E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F64F41A23095DC700F9B58E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		6F64F41D23095DC700F9B58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F64F41F23095DCB00F9B58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F64F42223095DCB00F9B58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +119,7 @@
 				6F64F44D23099E3800F9B58E /* Model */,
 				6F64F44C23099E3400F9B58E /* View */,
 				6F64F44B23099E2E00F9B58E /* Controller */,
-				6F64F4532309ABC200F9B58E /* Utils */,
+				6F64F45B230B22B400F9B58E /* XIBs */,
 				6F64F44E23099E3F00F9B58E /* Storyboards */,
 				6F64F4472309979D00F9B58E /* GoogleService-Info.plist */,
 				6F64F42423095DCB00F9B58E /* Info.plist */,
@@ -135,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				6F64F4582309BFA600F9B58E /* View */,
+				6F64F4532309ABC200F9B58E /* Utils */,
 				6F64F41F23095DCB00F9B58E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -145,7 +155,7 @@
 			children = (
 				6F64F44F23099E6D00F9B58E /* LoginVC.swift */,
 				6F64F45123099E7A00F9B58E /* RegisterVC.swift */,
-				6F64F41A23095DC700F9B58E /* ViewController.swift */,
+				6F64F41A23095DC700F9B58E /* HomeVC.swift */,
 				6F64F41823095DC700F9B58E /* AppDelegate.swift */,
 			);
 			path = Controller;
@@ -180,6 +190,7 @@
 			children = (
 				6F64F4542309ABD100F9B58E /* Extensions.swift */,
 				6F64F4562309BCE700F9B58E /* Constants.swift */,
+				6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -190,6 +201,15 @@
 				6F64F4592309BFB700F9B58E /* RoundedViews.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6F64F45B230B22B400F9B58E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				6F41A2F4230B235E00B62D2B /* ForgotPasswordVC.swift */,
+				6F41A2F5230B235E00B62D2B /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		D4A6A87D495A1DD41F73FB29 /* Pods */ = {
@@ -297,6 +317,7 @@
 			files = (
 				6F64F44323095F0900F9B58E /* .gitignore in Resources */,
 				6F64F4452309653400F9B58E /* LoginStoryboard.storyboard in Resources */,
+				6F41A2F7230B235E00B62D2B /* ForgotPasswordVC.xib in Resources */,
 				6F64F42323095DCB00F9B58E /* LaunchScreen.storyboard in Resources */,
 				6F64F42023095DCB00F9B58E /* Assets.xcassets in Resources */,
 				6F64F41E23095DC700F9B58E /* Main.storyboard in Resources */,
@@ -436,12 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F41A2F9230B6E9C00B62D2B /* Firebase+Utils.swift in Sources */,
 				6F64F4552309ABD100F9B58E /* Extensions.swift in Sources */,
-				6F64F41B23095DC700F9B58E /* ViewController.swift in Sources */,
+				6F64F41B23095DC700F9B58E /* HomeVC.swift in Sources */,
 				6F64F45223099E7A00F9B58E /* RegisterVC.swift in Sources */,
 				6F64F41923095DC700F9B58E /* AppDelegate.swift in Sources */,
 				6F64F45A2309BFB700F9B58E /* RoundedViews.swift in Sources */,
 				6F64F45023099E6D00F9B58E /* LoginVC.swift in Sources */,
+				6F41A2F6230B235E00B62D2B /* ForgotPasswordVC.swift in Sources */,
 				6F64F4572309BCE700F9B58E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,8 +473,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F41A2FC230B6F4B00B62D2B /* Extensions.swift in Sources */,
+				6F41A2FA230B6F4300B62D2B /* Firebase+Utils.swift in Sources */,
 				6F64F43323095E1500F9B58E /* ViewController.swift in Sources */,
 				6F64F43123095E1500F9B58E /* AppDelegate.swift in Sources */,
+				6F41A2FB230B6F4700B62D2B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9D7992LUJ;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,6 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9D7992LUJ;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9D7992LUJ;
 				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,6 +703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9D7992LUJ;
 				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

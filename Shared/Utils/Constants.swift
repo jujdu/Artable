@@ -17,6 +17,10 @@ struct StoryboardID {
     static let LoginVC = "loginVC"
 }
 
+struct NibNames {
+    static let ForgotPasswordVC = "ForgotPasswordVC"
+}
+
 struct AppImages {
     static let GreenCheck = "green_check"
     static let RedCheck = "red_check"

@@ -50,33 +50,34 @@ class RegisterVC: UIViewController {
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     @IBAction func registerClicked(_ sender: Any) {
         
         guard let email = emailTxt.text, email.isNotEmpty,
             let username = usernameTxt.text, username.isNotEmpty,
-            let password = passwordTxt.text, password.isNotEmpty else { return }
+            let password = passwordTxt.text, password.isNotEmpty else {
+                simpleAlert(title: "Error", message: "Please fill out all fileds.")
+                return }
+        
+        guard let confirmPassword = confirmPasswordTxt.text, confirmPassword == password else {
+            simpleAlert(title: "Error", message: "Passwords do not match.")
+            return
+        }
+        
+        guard let authUser = Auth.auth().currentUser else { return }
         
         activityIndicator.startAnimating()
         
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        let credential = EmailAuthProvider.credential(withEmail: email, password: password)
+        authUser.link(with: credential) { (result, error) in
             if let error = error {
+                self.activityIndicator.stopAnimating()
+                Auth.auth().handleFireAuthError(error: error, vc: self)
                 debugPrint(error)
                 return
             }
             
             self.activityIndicator.stopAnimating()
-            print("success")
+            self.dismiss(animated: true, completion: nil)
         }
-        
     }
 }
