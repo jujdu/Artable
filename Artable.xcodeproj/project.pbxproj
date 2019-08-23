@@ -13,6 +13,16 @@
 		6F41A2FA230B6F4300B62D2B /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */; };
 		6F41A2FB230B6F4700B62D2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4562309BCE700F9B58E /* Constants.swift */; };
 		6F41A2FC230B6F4B00B62D2B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4542309ABD100F9B58E /* Extensions.swift */; };
+		6F41A2FE230B74B600B62D2B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2FD230B74B600B62D2B /* Category.swift */; };
+		6F41A2FF230B74B600B62D2B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F41A2FD230B74B600B62D2B /* Category.swift */; };
+		6F42D917230DF76E004D8071 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D916230DF76E004D8071 /* ProductsVC.swift */; };
+		6F42D918230DF783004D8071 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D916230DF76E004D8071 /* ProductsVC.swift */; };
+		6F42D91A230DF7DE004D8071 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D919230DF7DE004D8071 /* Product.swift */; };
+		6F42D91B230DF7E1004D8071 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D919230DF7DE004D8071 /* Product.swift */; };
+		6F42D91E230DF8A0004D8071 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D91C230DF8A0004D8071 /* ProductCell.swift */; };
+		6F42D91F230DF8A0004D8071 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D91C230DF8A0004D8071 /* ProductCell.swift */; };
+		6F42D920230DF8A0004D8071 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F42D91D230DF8A0004D8071 /* ProductCell.xib */; };
+		6F42D921230DF8A0004D8071 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F42D91D230DF8A0004D8071 /* ProductCell.xib */; };
 		6F64F41923095DC700F9B58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F41823095DC700F9B58E /* AppDelegate.swift */; };
 		6F64F41B23095DC700F9B58E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F41A23095DC700F9B58E /* HomeVC.swift */; };
 		6F64F41E23095DC700F9B58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F64F41C23095DC700F9B58E /* Main.storyboard */; };
@@ -33,6 +43,10 @@
 		6F64F4552309ABD100F9B58E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4542309ABD100F9B58E /* Extensions.swift */; };
 		6F64F4572309BCE700F9B58E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4562309BCE700F9B58E /* Constants.swift */; };
 		6F64F45A2309BFB700F9B58E /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64F4592309BFB700F9B58E /* RoundedViews.swift */; };
+		6FDB81C8230DF04F005F1FAC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB81C6230DF04F005F1FAC /* CategoryCell.swift */; };
+		6FDB81C9230DF04F005F1FAC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB81C6230DF04F005F1FAC /* CategoryCell.swift */; };
+		6FDB81CA230DF04F005F1FAC /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDB81C7230DF04F005F1FAC /* CategoryCell.xib */; };
+		6FDB81CB230DF04F005F1FAC /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDB81C7230DF04F005F1FAC /* CategoryCell.xib */; };
 		D6CF0FC420129AC44DC1D143 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CDD4963107E57B6010E87B /* Pods_ArtableAdmin.framework */; };
 		F163AB47F4B7F5DF0B108179 /* Pods_Artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D363C789C3D05CA823030B /* Pods_Artable.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +55,11 @@
 		6F41A2F4230B235E00B62D2B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		6F41A2F5230B235E00B62D2B /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		6F41A2F8230B6E9C00B62D2B /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		6F41A2FD230B74B600B62D2B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6F42D916230DF76E004D8071 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		6F42D919230DF7DE004D8071 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6F42D91C230DF8A0004D8071 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		6F42D91D230DF8A0004D8071 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		6F64F41523095DC700F9B58E /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F64F41823095DC700F9B58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F64F41A23095DC700F9B58E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -63,6 +82,8 @@
 		6F64F4542309ABD100F9B58E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6F64F4562309BCE700F9B58E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F64F4592309BFB700F9B58E /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		6FDB81C6230DF04F005F1FAC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6FDB81C7230DF04F005F1FAC /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		9B5D99AB6A79D06C57783AB6 /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		A408C1579F0C41BF976F250C /* Pods-Artable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artable/Pods-Artable.debug.xcconfig"; sourceTree = "<group>"; };
 		B1D363C789C3D05CA823030B /* Pods_Artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +137,6 @@
 		6F64F41723095DC700F9B58E /* Artable */ = {
 			isa = PBXGroup;
 			children = (
-				6F64F44D23099E3800F9B58E /* Model */,
 				6F64F44C23099E3400F9B58E /* View */,
 				6F64F44B23099E2E00F9B58E /* Controller */,
 				6F64F45B230B22B400F9B58E /* XIBs */,
@@ -143,7 +163,9 @@
 		6F64F44023095E6D00F9B58E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6F64F44D23099E3800F9B58E /* Model */,
 				6F64F4582309BFA600F9B58E /* View */,
+				6FDB81CC230DF064005F1FAC /* XIBs */,
 				6F64F4532309ABC200F9B58E /* Utils */,
 				6F64F41F23095DCB00F9B58E /* Assets.xcassets */,
 			);
@@ -156,6 +178,7 @@
 				6F64F44F23099E6D00F9B58E /* LoginVC.swift */,
 				6F64F45123099E7A00F9B58E /* RegisterVC.swift */,
 				6F64F41A23095DC700F9B58E /* HomeVC.swift */,
+				6F42D916230DF76E004D8071 /* ProductsVC.swift */,
 				6F64F41823095DC700F9B58E /* AppDelegate.swift */,
 			);
 			path = Controller;
@@ -171,8 +194,11 @@
 		6F64F44D23099E3800F9B58E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F41A2FD230B74B600B62D2B /* Category.swift */,
+				6F42D919230DF7DE004D8071 /* Product.swift */,
 			);
-			path = Model;
+			name = Model;
+			path = ../Artable/Model;
 			sourceTree = "<group>";
 		};
 		6F64F44E23099E3F00F9B58E /* Storyboards */ = {
@@ -199,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				6F64F4592309BFB700F9B58E /* RoundedViews.swift */,
+				6FDB81C6230DF04F005F1FAC /* CategoryCell.swift */,
+				6F42D91C230DF8A0004D8071 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +236,15 @@
 			children = (
 				6F41A2F4230B235E00B62D2B /* ForgotPasswordVC.swift */,
 				6F41A2F5230B235E00B62D2B /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		6FDB81CC230DF064005F1FAC /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				6FDB81C7230DF04F005F1FAC /* CategoryCell.xib */,
+				6F42D91D230DF8A0004D8071 /* ProductCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -315,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F42D920230DF8A0004D8071 /* ProductCell.xib in Resources */,
 				6F64F44323095F0900F9B58E /* .gitignore in Resources */,
 				6F64F4452309653400F9B58E /* LoginStoryboard.storyboard in Resources */,
 				6F41A2F7230B235E00B62D2B /* ForgotPasswordVC.xib in Resources */,
@@ -322,6 +360,7 @@
 				6F64F42023095DCB00F9B58E /* Assets.xcassets in Resources */,
 				6F64F41E23095DC700F9B58E /* Main.storyboard in Resources */,
 				6F64F4482309979D00F9B58E /* GoogleService-Info.plist in Resources */,
+				6FDB81CA230DF04F005F1FAC /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F64F44A23099A7F00F9B58E /* GoogleService-Info.plist in Resources */,
+				6FDB81CB230DF04F005F1FAC /* CategoryCell.xib in Resources */,
+				6F42D921230DF8A0004D8071 /* ProductCell.xib in Resources */,
 				6F64F44623097ED600F9B58E /* .gitignore in Resources */,
 				6F64F43B23095E1600F9B58E /* LaunchScreen.storyboard in Resources */,
 				6F64F44123095E7700F9B58E /* Assets.xcassets in Resources */,
@@ -458,14 +499,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F41A2F9230B6E9C00B62D2B /* Firebase+Utils.swift in Sources */,
+				6F41A2FE230B74B600B62D2B /* Category.swift in Sources */,
 				6F64F4552309ABD100F9B58E /* Extensions.swift in Sources */,
 				6F64F41B23095DC700F9B58E /* HomeVC.swift in Sources */,
 				6F64F45223099E7A00F9B58E /* RegisterVC.swift in Sources */,
+				6F42D91E230DF8A0004D8071 /* ProductCell.swift in Sources */,
 				6F64F41923095DC700F9B58E /* AppDelegate.swift in Sources */,
 				6F64F45A2309BFB700F9B58E /* RoundedViews.swift in Sources */,
 				6F64F45023099E6D00F9B58E /* LoginVC.swift in Sources */,
+				6F42D917230DF76E004D8071 /* ProductsVC.swift in Sources */,
 				6F41A2F6230B235E00B62D2B /* ForgotPasswordVC.swift in Sources */,
 				6F64F4572309BCE700F9B58E /* Constants.swift in Sources */,
+				6FDB81C8230DF04F005F1FAC /* CategoryCell.swift in Sources */,
+				6F42D91A230DF7DE004D8071 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,11 +519,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F42D918230DF783004D8071 /* ProductsVC.swift in Sources */,
 				6F41A2FC230B6F4B00B62D2B /* Extensions.swift in Sources */,
+				6F42D91B230DF7E1004D8071 /* Product.swift in Sources */,
 				6F41A2FA230B6F4300B62D2B /* Firebase+Utils.swift in Sources */,
 				6F64F43323095E1500F9B58E /* ViewController.swift in Sources */,
+				6FDB81C9230DF04F005F1FAC /* CategoryCell.swift in Sources */,
 				6F64F43123095E1500F9B58E /* AppDelegate.swift in Sources */,
+				6F42D91F230DF8A0004D8071 /* ProductCell.swift in Sources */,
 				6F41A2FB230B6F4700B62D2B /* Constants.swift in Sources */,
+				6F41A2FF230B74B600B62D2B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
