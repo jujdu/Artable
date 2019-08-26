@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NT-AY-3G5" customClass="RoundedShadowView" customModule="Artable" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                        <rect key="frame" x="8" y="8" width="134" height="184"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="animal_1" translatesAutoresizingMaskIntoConstraints="NO" id="7Mt-gR-wk4">
-                                <rect key="frame" x="8" y="8" width="134" height="153.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="145.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catergory Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-RW-wcD">
-                                <rect key="frame" x="25" y="169.5" width="100" height="22.5"/>
+                                <rect key="frame" x="25" y="153.5" width="84" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.2158032476" green="0.2041332629" blue="0.3083756345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +35,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pJd-RW-wcD" secondAttribute="trailing" constant="25" id="Hmr-yJ-30V"/>
-                            <constraint firstItem="7Mt-gR-wk4" firstAttribute="leading" secondItem="7NT-AY-3G5" secondAttribute="leading" constant="8" id="OTy-Pa-WkN"/>
+                            <constraint firstItem="7Mt-gR-wk4" firstAttribute="leading" secondItem="7NT-AY-3G5" secondAttribute="leading" id="OTy-Pa-WkN"/>
                             <constraint firstItem="pJd-RW-wcD" firstAttribute="leading" secondItem="7NT-AY-3G5" secondAttribute="leading" constant="25" id="QNq-D8-4TK"/>
-                            <constraint firstItem="7Mt-gR-wk4" firstAttribute="top" secondItem="7NT-AY-3G5" secondAttribute="top" constant="8" id="YVw-Da-ct4"/>
-                            <constraint firstAttribute="trailing" secondItem="7Mt-gR-wk4" secondAttribute="trailing" constant="8" id="mMR-FT-ecH"/>
+                            <constraint firstItem="7Mt-gR-wk4" firstAttribute="top" secondItem="7NT-AY-3G5" secondAttribute="top" id="YVw-Da-ct4"/>
+                            <constraint firstAttribute="trailing" secondItem="7Mt-gR-wk4" secondAttribute="trailing" id="mMR-FT-ecH"/>
                             <constraint firstAttribute="bottom" secondItem="pJd-RW-wcD" secondAttribute="bottom" constant="8" id="vpk-ti-CMZ"/>
                             <constraint firstItem="pJd-RW-wcD" firstAttribute="top" secondItem="7Mt-gR-wk4" secondAttribute="bottom" constant="8" id="yKw-37-3rP"/>
                         </constraints>
@@ -46,10 +46,10 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="7NT-AY-3G5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CZb-rw-3dt"/>
-                <constraint firstItem="7NT-AY-3G5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P6R-CT-Abl"/>
-                <constraint firstAttribute="trailing" secondItem="7NT-AY-3G5" secondAttribute="trailing" id="RaP-gu-tCC"/>
-                <constraint firstAttribute="bottom" secondItem="7NT-AY-3G5" secondAttribute="bottom" id="iR2-jH-DZk"/>
+                <constraint firstItem="7NT-AY-3G5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="JnB-62-j8P"/>
+                <constraint firstItem="7NT-AY-3G5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="VAz-2D-cAs"/>
+                <constraint firstAttribute="trailing" secondItem="7NT-AY-3G5" secondAttribute="trailing" constant="8" id="WN9-aC-nsh"/>
+                <constraint firstAttribute="bottom" secondItem="7NT-AY-3G5" secondAttribute="bottom" constant="8" id="uJl-Gg-kUY"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="125" height="152"/>

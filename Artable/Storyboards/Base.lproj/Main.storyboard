@@ -86,20 +86,20 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rs5-wr-WEo">
-                                <rect key="frame" x="2" y="64" width="371" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aEZ-YB-H7S" firstAttribute="leading" secondItem="G2q-pZ-NVC" secondAttribute="leading" id="29o-sC-Hzy"/>
-                            <constraint firstItem="G2q-pZ-NVC" firstAttribute="trailing" secondItem="rs5-wr-WEo" secondAttribute="trailing" constant="2" id="CCQ-WP-fxc"/>
+                            <constraint firstItem="G2q-pZ-NVC" firstAttribute="trailing" secondItem="rs5-wr-WEo" secondAttribute="trailing" id="CCQ-WP-fxc"/>
                             <constraint firstAttribute="bottom" secondItem="aEZ-YB-H7S" secondAttribute="bottom" id="RMd-3a-gpz"/>
                             <constraint firstAttribute="bottom" secondItem="rs5-wr-WEo" secondAttribute="bottom" id="VtX-hv-vfc"/>
                             <constraint firstItem="aEZ-YB-H7S" firstAttribute="trailing" secondItem="G2q-pZ-NVC" secondAttribute="trailing" id="fj6-HP-kxo"/>
                             <constraint firstItem="aEZ-YB-H7S" firstAttribute="top" secondItem="G2q-pZ-NVC" secondAttribute="top" id="lbO-l6-vsQ"/>
                             <constraint firstItem="rs5-wr-WEo" firstAttribute="top" secondItem="G2q-pZ-NVC" secondAttribute="top" id="w3t-gx-mJE"/>
-                            <constraint firstItem="rs5-wr-WEo" firstAttribute="leading" secondItem="G2q-pZ-NVC" secondAttribute="leading" constant="2" id="woK-wu-KBg"/>
+                            <constraint firstItem="rs5-wr-WEo" firstAttribute="leading" secondItem="G2q-pZ-NVC" secondAttribute="leading" id="woK-wu-KBg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G2q-pZ-NVC"/>
                     </view>

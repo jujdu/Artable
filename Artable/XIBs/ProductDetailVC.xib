@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailVC" customModule="Artable" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="OnH-Po-LUK" id="eJm-nt-ipN"/>
+                <outlet property="productDescription" destination="nKG-3q-oLu" id="ADz-Eo-SXR"/>
+                <outlet property="productImage" destination="zkR-rj-ahA" id="cxM-gG-DTn"/>
+                <outlet property="productPrice" destination="OQc-j2-WIZ" id="p4S-lv-1di"/>
+                <outlet property="productTitle" destination="ycq-Vf-5GL" id="P81-Eg-iiX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnH-Po-LUK">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YYt-09-8gf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="484.5" translatesAutoresizingMaskIntoConstraints="NO" id="FKd-lx-cg2" customClass="RoundedShadowView" customModule="Artable" customModuleProvider="target">
+                    <rect key="frame" x="20" y="82.5" width="335" height="502"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="krS-Vm-540">
+                            <rect key="frame" x="20" y="20" width="295" height="462"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_1" translatesAutoresizingMaskIntoConstraints="NO" id="zkR-rj-ahA">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="250"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="E9M-bQ-G86"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-Vf-5GL">
+                                    <rect key="frame" x="0.0" y="262" width="295" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                    <color key="textColor" red="0.2158032476" green="0.2041332629" blue="0.3083756345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-j2-WIZ">
+                                    <rect key="frame" x="0.0" y="301.5" width="295" height="25"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                    <color key="textColor" red="0.2158032476" green="0.2041332629" blue="0.3083756345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKG-3q-oLu">
+                                    <rect key="frame" x="0.0" y="338.5" width="295" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                    <color key="textColor" red="0.2158032476" green="0.2041332629" blue="0.3083756345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHm-rO-JLz" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="370" width="295" height="40"/>
+                                    <color key="backgroundColor" red="0.2158032476" green="0.2041332629" blue="0.3083756345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Lol-HR-RxF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <state key="normal" title="Add to Cart">
+                                        <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addCartClicked:" destination="-1" eventType="touchUpInside" id="Cic-FD-hvv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-pH-fj8" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="422" width="295" height="40"/>
+                                    <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="0SC-Ch-UGx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <state key="normal" title="Keep shopping">
+                                        <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="dismissProduct:" destination="-1" eventType="touchUpInside" id="vuX-zr-7Tw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="krS-Vm-540" secondAttribute="trailing" constant="20" id="5FH-TJ-ApW"/>
+                        <constraint firstAttribute="bottom" secondItem="krS-Vm-540" secondAttribute="bottom" constant="20" id="87A-Mv-mdB"/>
+                        <constraint firstItem="krS-Vm-540" firstAttribute="top" secondItem="FKd-lx-cg2" secondAttribute="top" constant="20" id="f2S-Yi-dcR"/>
+                        <constraint firstItem="krS-Vm-540" firstAttribute="leading" secondItem="FKd-lx-cg2" secondAttribute="leading" constant="20" id="rbx-kx-7Rl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OnH-Po-LUK" secondAttribute="trailing" id="4kK-Zf-y6A"/>
+                <constraint firstItem="OnH-Po-LUK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8LC-jS-hca"/>
+                <constraint firstItem="FKd-lx-cg2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9vy-Wj-rzJ"/>
+                <constraint firstItem="FKd-lx-cg2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FIg-ef-WE0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FKd-lx-cg2" secondAttribute="trailing" constant="20" id="JcW-bV-wYm"/>
+                <constraint firstItem="FKd-lx-cg2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PYL-Ux-8HA"/>
+                <constraint firstAttribute="bottom" secondItem="OnH-Po-LUK" secondAttribute="bottom" id="ehx-mG-tua"/>
+                <constraint firstItem="OnH-Po-LUK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yg5-g2-QLh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="animal_1" width="1500" height="1023"/>
+    </resources>
+</document>
