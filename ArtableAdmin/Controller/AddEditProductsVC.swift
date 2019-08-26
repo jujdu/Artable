@@ -158,7 +158,6 @@ extension AddEditProductsVC: UIImagePickerControllerDelegate, UINavigationContro
             self.productImage.contentMode = .scaleToFill
             self.productImage.image = image
         }
-//        dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
