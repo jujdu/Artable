@@ -9,15 +9,15 @@
 import UIKit
 import FirebaseFirestore
 
-class ProductsVC: UIViewController {
-    
+class ProductsVC: UIViewController, ProductCellDelegate {
+   
     @IBOutlet weak var tableView: UITableView!
     
     var category: Category!
     var products = [Product]()
     var db: Firestore!
     var listener: ListenerRegistration!
-//    var
+    var showFavorites = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,15 @@ class ProductsVC: UIViewController {
     }
     
     func setProductsListener() {
-        listener = db.products(category: category.id).addSnapshotListener({ (snap, error) in
+        
+        var ref: Query!
+        if showFavorites {
+            ref = db.collection("users").document(UserService.user.id).collection("favorites")
+        } else {
+            ref = db.products(category: category.id)
+        }
+        
+        listener = ref.addSnapshotListener({ (snap, error) in
             
             if let error = error {
                 debugPrint(error.localizedDescription)
@@ -65,7 +73,16 @@ class ProductsVC: UIViewController {
             })
         })
     }
-
+    
+    func productFavorited(product: Product) {
+        UserService.favoriteSelected(product: product)
+        guard let index = products.firstIndex(of: product) else { return }
+        tableView.reloadRows(at: [IndexPath.init(row: index, section: 0)], with: .automatic)
+    }
+    
+    func productAddToCart(product: Product) {
+        StripeCart.addItemToCart(item: product)
+    }
 }
 
 extension ProductsVC: UITableViewDelegate, UITableViewDataSource {
@@ -106,6 +123,7 @@ extension ProductsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.ProductCell, for: indexPath) as? ProductCell {
+            cell.delegate = self
             cell.configureCell(product: products[indexPath.row])
             return cell
         }

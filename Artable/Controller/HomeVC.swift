@@ -33,6 +33,9 @@ class HomeVC: UIViewController {
         
         if let user = Auth.auth().currentUser, !user.isAnonymous {
             loginOutBtn.title = "Logout"
+            if UserService.userListener == nil {
+                UserService.getCurrentUser()
+            }
         } else {
             loginOutBtn.title = "Login"
         }
@@ -107,6 +110,7 @@ class HomeVC: UIViewController {
         } else {
             do {
                 try Auth.auth().signOut()
+                UserService.logoutUser()
                 Auth.auth().signInAnonymously { (_, error) in
                     if let error = error {
                         Auth.auth().handleFireAuthError(error: error, vc: self)
@@ -120,6 +124,11 @@ class HomeVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func favoritesClicked(_ sender: Any) {
+        performSegue(withIdentifier: Segues.ToFavorites, sender: self)
+    }
+    
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -185,63 +194,11 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             if let destination = segue.destination as? ProductsVC {
                 destination.category = selectedCategory
             }
+        } else if segue.identifier == Segues.ToFavorites {
+            if let destination = segue.destination as? ProductsVC {
+                destination.category = selectedCategory
+                destination.showFavorites = true
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// for only one and collections
-
-//    func fetchDocument() {
-//        let docRef = db.collection("categories").document("gh2GjgXfRmrWr1HLL9Li")
-//
-//        docRef.addSnapshotListener { (snap, error) in
-//            self.categories.removeAll()
-//            guard let data = snap?.data() else { return }
-//            let newCategory = Category(data: data)
-//            self.categories.append(newCategory)
-//            self.collectionView.reloadData()
-//        }
-//        docRef.getDocument { (snap, error) in
-//            guard let data = snap?.data() else { return }
-//            let newCategory = Category(data: data)
-//            self.categories.append(newCategory)
-//            self.collectionView.reloadData()
-//        }
-//    }
-
-//    func fetchConnection() {
-//        let collectionRef = db.collection("categories")
-//        listener = collectionRef.addSnapshotListener { (snap, error) in
-//            guard let documents = snap?.documents else { return }
-//
-//            snap?.documentChanges
-//            self.categories.removeAll()
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-
-//        collectionRef.getDocuments { (snap, error) in
-//            guard let documents = snap?.documents else { return }
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-//    }
